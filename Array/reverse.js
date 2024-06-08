@@ -1,4 +1,8 @@
-function reverse(str){
-    return str.split('').reverse().join('');
+function reverse(arr){
+    let newArr = [];
+    for(let i=arr.length-1; i>=0; i--){
+       newArr += arr[i] 
+    }
+    return newArr;
  }
- reverse("Aman");
+ console.log(reverse([5,9,7,6,3,1]));
